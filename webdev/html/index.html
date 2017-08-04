@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Start Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/stylesMain.css">
+
+</head>
+<body>
+<div id="header">
+    <h1>JScript Engine 1.0</h1>
+</div>
+<div id="links">
+    <!-- suggested CSS for this section - urllinks {display:inline; padding-left: 5em;} -->
+    <ul>
+        <li class="urllinks"><a class="urllinks" href="index.html">+HOME+</a></li>
+        <li class="urllinks"><a class="urllinks" href="broken_link.html">Link 1</a></li>
+        <li class="urllinks"><a class="urllinks" href="broken_link.html">Link 2</a></li>
+        <li class="urllinks"><a class="urllinks" href="broken_link.html">Link 3</a></li>
+        <li class="urllinks"><a class="urllinks" href="broken_link.html">Link 4</a></li>
+    </ul>
+</div>
+
+<div id="nav1">
+    <p class="pagelinks" id="cmd0" onclick="doCommandChoice(0)">Choice 0</p>
+    <p class="pagelinks" id="cmd1" onclick="doCommandChoice(1)">Choice 1</p>
+    <p class="pagelinks" id="cmd2" onclick="doCommandChoice(2)">Choice 2</p>
+    <p class="pagelinks" id="cmd3" onclick="doCommandChoice(3)">Choice 3</p>
+    <p class="pagelinks" id="cmd4" onclick="doCommandChoice(4)">Choice 4</p>
+    <p class="pagelinks" id="cmd5" onclick="doCommandChoice(5)">Choice 5</p>
+    <p class="pagelinks" id="cmd6" onclick="doCommandChoice(6)">Choice 6</p>
+    <p class="pagelinks" id="cmd7" onclick="doCommandChoice(7)">Choice 7</p>
+</div>
+
+<div id="mainbody1">
+    <img class="weblogo" src="../images/under_construction_clip_art_22790.jpg" alt="Under Construction.">
+    <h2>Overview</h2>
+    <p id="output">Description of application goes here.</p>
+    <!--
+    ===========================================================================
+    BOOKMARK DELETEME
+    ===========================================================================
+    -->
+    <div ng-app="myInventoryList" ng-controller="invCtrl">
+        <ul>
+            <li ng-repeat="x in plrInventory">{{x}}</li>
+        </ul>
+    </div>
+
+    <button type="button" onclick="performAttack2()">ACTION!</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <!--
+    ===========================================================================
+    BOOKMARK DELETEME
+    ===========================================================================
+    -->
+</div>
+
+<div id="footer">
+    <!--    <h3>Footer</h3>-->
+    <p>Disclaimer: This is a bare engine for educational/training purposes only. No information submitted will actually be stored or represent a real product purchase. Likewise while all work within this site is believed to be original work, any semblance to real materials is protected under the <a href="http://www.mbbp.com/resources/iptech/fair_use.html">fair use act</a> due to this being an educational entity only.</p>
+</div>
+
+
+<!--
+**********************************************************************************
+**********************************************************************************
+All Java Scripts below this line. No HTML formatting should occur below this point
+**********************************************************************************
+**********************************************************************************
+-->
+
+<!--
+Global JavaScripts defined here
+-->
+<!-- Angular control class. Use in any pages requiring inventory control-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<script src="../jscript/dataTypes.js"></script>
+<script src="../jscript/utils.js"></script>
+<script src="../jscript/mainEngine.js"></script>
+<script src="../jscript/mainMapper.js"></script>
+<script src="../jscript/fight.js"></script>
+
+<script src="../jscript/angular/inventoryControl.js"></script>
+
+<!-- Beginning of local scripts block -->
+<script>
+
+
+</script>
+<!-- End of local scripts block -->
+
+</body>
+</html>

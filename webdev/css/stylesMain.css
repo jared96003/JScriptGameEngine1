@@ -1,0 +1,204 @@
+/* Style sheet created by Jared Curtis for format of the test project
+ *
+ * Remember to add the following line of the <head> block of each html file referencing this sheet:
+ * <link rel="stylesheet" type="text/css" href="css/indiv-styles.css">
+ *
+ */
+
+/* Background appearance of the panes and site */
+body {
+    /* background-color:#E6E6FA; */
+    /* Remove comment block when an image is decided on
+    background-image: url(../images/~web-background.bmp);
+    background-repeat:repeat;
+    background-attachment:fixed;
+    */
+
+    /* If needed uncomment this repeat block to change the image type
+       background-repeat: repeat-x;
+       background-repeat: no-repeat;
+    */
+}
+
+/* Layout of the various panes */
+/* Miscellaneous usage use syntax of <tagname id="block1" and add additional tags as needed for future elements */
+#header {
+    background-color: #820006;
+    color: #DDDDDD;
+    text-align:center;
+    padding:5px;
+}
+#links {
+    background-color: #555555;
+    color: #0d00ff;
+    text-align:center;
+    padding:5px;
+}
+li.urllinks {
+    display:inline;
+    padding-left: 5em;
+}
+a.urllinks:link {
+    color: #ffffff;:
+}
+a.urllinks:visited {
+    color: #ffffff;:
+}
+a.urllinks:active {
+    color: #fffc00;:
+}
+
+p.pagelinks:hover {
+    color: #28ff3b;
+}
+
+p.aboutus:first-letter {
+    font-weight: bold;
+    font-size: 36pt;
+    color:blue;
+}
+.aboutus {
+    font-size:24px;
+}
+span.aboutus {
+    color:purple;
+    font-size:28px;
+} /*purple*/
+
+ol li.customerlist {
+    list-style-type:upper-roman;
+}
+
+ul li.customerlist {
+    list-style-type:square;
+}
+
+table.customertable {
+    color:red;
+    width:85%;
+    border:5px solid #4B0082;
+    padding:5px;
+}
+th.customertable {
+    border: 1px dotted black;
+    color:#4B0082;
+    text-align:center;
+}
+tr.customertable {
+}
+td.customertable {
+    color: #6495ED;
+    text-align:left;
+}
+
+img.weblogo {
+    float:right;
+    width:250px;
+    height:340px;
+}
+#nav2,#nav1 {
+    line-height:30px;
+    color:#E0FFFF;
+    background-color: #CE3E45;
+    text-align:left;
+    height:2000px;
+    width:12%;
+    float:left;
+    padding:5px;
+}
+
+p.mainbody:first-letter {
+    font-weight: bold;
+    font-size: 36pt;
+    color:#4B0082;
+}
+span.mainbody {
+    color:#6495ED;
+    font-size:28px;
+}
+
+
+#mainbody2,#mainbody1 {
+    /* background-color: linen;*/
+    height:2000px;
+    width:88%
+    float:left;
+    text-align:left;
+    padding:10px;
+}
+#mainbody3 {
+    /* background-color: linen; */
+    height:1000px;
+    width:100%
+    float:left;
+    text-align:left;
+    padding:10px;
+}
+#footer {
+    background-color:#E6E6FA;
+    color:#4B0082;
+    clear:both;
+    text-align:justified;
+    padding:5px;
+    position:fixed;
+    bottom:0%;
+    left:0%;
+    right:0%;
+    width;100%;
+}
+
+/* Implementation for responsive web design goes here */
+
+@media screen and (min-width: 451px) and (max-width: 600px) {
+    img.weblogo {
+        width:150px;
+        height:204px;
+    }
+}
+
+@media screen and (min-width: 351px) and (max-width: 450px) {
+    img.weblogo {
+        width:60px;
+        height:81px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    img.weblogo {
+        width:30px;
+        height:40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #footer {
+        position:relative;
+        clear:both;
+        float:left;
+    }
+
+    #nav2,#nav1 {width:25%;}
+
+    #mainbody2,#mainbody1 {width:75%;}
+
+    #links {
+        text-align:left;
+    }
+
+    li.urllinks {
+        padding-left: none;
+        display:default;
+    }
+}
+
+@media print {
+    #nav2,#nav1,#mainbody3,#mainbody2,#mainbody1 {height:350px;}
+
+    img.weblogo {
+        width:60px;
+        height:81px;
+    }
+}
+
+
+/* See http://www.w3schools.com/cssref/css3_pr_box-sizing.asp for frame related information if animations turn out odd */
